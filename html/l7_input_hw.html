@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="..." method="post">
+        <fieldset>
+            <legend>Основная информация пользователя:</legend>
+            <label for="name">Введите полное имя</label><br>
+            <input type="text" id="name" name="full_name" placeholder="full_name" required>
+            <br>
+            <label for="email">Введите свой email</label><br>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <br>
+            <label for="pass">Введите пароль</label><br>
+            <input type="password" id="pass" name="password" placeholder="password" required>
+            <br>
+            <label for="pass_confirmation">Подтвердите пароль</label><br>
+            <input type="password" id="pass_confirmation" name="password_confirmation" placeholder="passpassword_confirmation" required>
+            <br>
+            <label for="male">Мужчина</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <br>
+            <label for="female">Женщина</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <label for="other">Другое</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <br>
+            <label for="birthday">Введите свою дату рождения</label><br>
+            <input type="date" id="birthday" name="birthday_date" value="birthday">
+        </fieldset>
+
+        <fieldset>
+            <legend>Информация об адресе:</legend>
+            <label for="text1">Введите улицу и номер дома</label><br>
+            <textarea id="text1" name="address" placeholder="address" cols="40" rows="3"></textarea>
+            <br>
+            <label for="country">Выберите вашу страну</label><br>
+            <select id="country" name="country">
+                <option value="Условная страна 1">Условная страна 1</option>
+                <option value="Условная страна 2">Условная страна 2</option>
+                <option value="Условная страна 3">Условная страна 3</option>
+                <option value="Условная страна 4">Условная страна 4</option>
+                <option value="Условная страна 5">Условная страна 5</option>
+            </select>
+            <br>
+            <label for="city">Введите ваш город</label><br>
+            <input type="text" id="city" name="name_city" placeholder="city">
+            <br>
+            <label for="postal_code">Введите ваш почтовый индекс</label><br>
+            <input type="text" id="postal_code" name="postal_code" placeholder="postal_code">
+        </fieldset>
+
+        <fieldset>
+            <legend>Предпочтительный метод связи (также ваш любимый цвет):</legend>
+            <input id="val1" type="checkbox" name="checkbox_value1" value="value1"> <label for="val1">Email </label><br>
+            <input id="val2" type="checkbox" name="checkbox_value1" value="value1"> <label for="val2">Телефон </label><br>
+            <input id="val3" type="checkbox" name="checkbox_value1" value="value1"> <label for="val3">Почтовая почта </label><br>
+            <input type="color" name="favourite_color" value="fav_color">
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительные детали</legend>
+            <label for="abt_us">Откуда вы о нас узнали?</label><br>
+            <select id="abt_us" name="about">
+                <option value="advertisement">Реклама</option>
+                <option value="friends">Друзья</option>
+                <option value="pigeon_mail">Голубиная рассылка</option>
+                <option value="old_bitches">Бабки на лавке</option>
+                <option value="random">Случайно</option>
+            </select><br><br>
+            <label for="profpic">Загрузите свое изображение профиля</label>
+            <input id="profpic" accept=".png, .jpg" type="file" name="picture">
+            <br><br>
+            <label for="comment">Оставьте отзыв/комментарий</label><br>
+            <textarea id="comment" name="commentary" placeholder="commentary" cols="30" rows="3"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительно</legend>
+            <label for="website">Веб-сайт</label>
+            <input id="website" type="url" placeholder="url" name="url" value=""> 
+            <br>
+            <label for="slider">Укажите свой уровень владения HTML от 1 до 10</label>
+            <input type="range" id="experience" name="slider" min="1" max="10" value="1" oninput="displayValue.value=experience.value">
+            <output id="displayValue">Ваш уровень:</output>
+        </fieldset>
+        
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
+</html>
