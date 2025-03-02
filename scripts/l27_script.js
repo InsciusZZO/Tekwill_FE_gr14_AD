@@ -60,30 +60,43 @@ console.log(studentUpdate(student, lang));
 
 // From exercise 7 ||
 //                 \/
+
 let try1 = "din",
     try2 = "recede",
     try3 = "Success",
     try4 = "(( @";
 
-function iDontReallyKnow(randomString) {
-    let keyboardChars = " abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>?/`~";
-    let newString = "";
-    for (let i = 0; i < randomString.length; i++) {
-        if (keyboardChars.includes(randomString[i].toLowerCase())) {
-            newString = newString + "(";
-            let index = keyboardChars.indexOf(randomString[i].toLowerCase());
-            keyboardChars = keyboardChars.slice(0, index) + keyboardChars.slice(index + 1);
-        } else {
-            newString = newString + ")";
-        }
-    }
-    return newString;
+// Misunderstood required task
+
+// function iDontReallyKnow(randomString) {
+//     let keyboardChars = " abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+[]{}|;:'\",.<>?/`~";
+//     let newString = "";
+//     for (let i = 0; i < randomString.length; i++) {
+//         if (keyboardChars.includes(randomString[i].toLowerCase())) {
+//             newString = newString + "(";
+//             let index = keyboardChars.indexOf(randomString[i].toLowerCase());
+//             keyboardChars = keyboardChars.slice(0, index) + keyboardChars.slice(index + 1);
+//         } else {
+//             newString = newString + ")";
+//         }
+//     }
+//     return newString;
+// }
+
+// try 2
+
+function iDontReallyKnow2(randomString) {
+    randomString = randomString.toLowerCase();
+    return [...randomString]
+        .map(char => randomString.indexOf(char) === randomString.lastIndexOf(char) ? '(' : ')')
+        .join('');
 }
 
-console.log(`${try1}: `, iDontReallyKnow(try1));
-console.log(`${try2}: `, iDontReallyKnow(try2));
-console.log(`${try3}: `, iDontReallyKnow(try3));
-console.log(`${try4}: `, iDontReallyKnow(try4));
+
+console.log(`${try1}: `, iDontReallyKnow2(try1));
+console.log(`${try2}: `, iDontReallyKnow2(try2));
+console.log(`${try3}: `, iDontReallyKnow2(try3));
+console.log(`${try4}: `, iDontReallyKnow2(try4));
 
 
 
