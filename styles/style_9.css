@@ -1,0 +1,19 @@
+#title_1 {
+    color: #257C23;
+    -webkit-text-stroke: 0.5px black;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p {
+    color: #257C23;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.unique_p {
+    color: #625200;
+    -webkit-text-stroke: 0px;
+    font-weight: bold;
+}
+
+
