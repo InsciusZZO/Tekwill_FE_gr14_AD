@@ -1,0 +1,30 @@
+h1 {
+    margin-left: 40%;
+    text-shadow:
+    3px 2px 3px rgba(83,21,29), 
+    -3px -2px 3px rgba(67,128,26);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    background: radial-gradient(circle, green 25%, white 75%);
+    border-radius: 50%;   
+
+}
+
+.container {
+    margin-left: 40%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border: 20px solid red;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px black;
+}
