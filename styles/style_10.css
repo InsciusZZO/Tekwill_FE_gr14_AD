@@ -1,0 +1,78 @@
+
+.nav-menu a::before {
+    content: "\25b6";
+    color: #541822;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.nav-menu a::after {
+    content: "\25C0";
+    color: #541822;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.nav-menu {
+    list-style-type: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+.title-1 {
+    color: #257C23;
+    -webkit-text-stroke: 0.5px black;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+img[alt="WK"] {
+    width: calc(50% + 150px);
+}
+
+h1 {
+    font-size: 2rem;
+    background-color: rgba(187,69,43, 0.5);
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    color: #257C23;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 18px;
+}
+
+.unique-p {
+    color: #625200;
+    -webkit-text-stroke: 0px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #257C23;
+}
+
+li {
+    font-size: 18px;
+}
+
+ol.list-1 li:nth-child(even) {
+    color: #541822;
+}
+
+ul.list-2 li:nth-last-child(2) {
+    color: #541822;
+}
+
+
+
+
